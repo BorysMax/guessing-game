@@ -11,16 +11,16 @@ class GuessingGame {
   }
 
   guess() {
-    this.guess = Math.round((this.min + this.max) / 2)
+    this.guess = Math.floor((this.min + this.max) / 2)
     return this.guess;
   }
 
   lower() {
-    this.max = this.guess;
+    this.max = this.guess-1;
   }
 
   greater() {
-    this.min = this.guess;
+    this.min = this.guess+1;
   }
 }
 
