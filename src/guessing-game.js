@@ -11,7 +11,7 @@ class GuessingGame {
   }
 
   guess() {
-    this.guess = Math.floor((this.max - this.min) / 2) + tjis.min;
+    this.guess = Math.round((this.max - this.min) / 2) + tjis.min;
     return this.guess;
   }
 
